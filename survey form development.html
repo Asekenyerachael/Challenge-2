@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>SURVEY FORM </title>
+ 
+ <style>
+     H1 { font: fantasy;
+      color: black;
+
+     }
+     label {
+         
+         text-align: right;
+         width: 150px;
+         padding-right: 25px;
+         
+         }
+         foam {
+             float: left;
+
+         }
+
+
+
+ </style>
+
+</head>
+<body>
+
+    <form>
+        <h3>Let us know how we can improve freeCodeCamp</h3>
+        <table>
+            <tr> 
+                <td>
+                    NAME :
+                </td>
+                <td>
+<input type="text" name="Name" placeholder="Enter your name">
+             </td>
+
+         </tr>
+         <br>
+         <br>
+         <tr>
+             <td>
+                 Email :
+             </td>
+             <td>
+                 <input type="text" name="Email" placeholder="Enter your email">
+             </td>
+
+         </tr>
+</table>
+<br>
+<br>
+ <div>
+     <label for="Age">Age</label>
+     <input type="text" name="Age" placeholder="Enter your age">
+ </div>
+ <br>
+ <br>
+  <div>
+      <label for= Gender class="right">Gender</label>
+
+      Male:  <input type="radio" name="Gender" value="male" class="left">
+
+       Female: <input type="radio" name="Gender" value="female" class="left">
+  </div>
+ <br>
+ <br>
+  <div>
+        <label for ="Which option best describes your current role?" class="right">Which option best describes your current role?</label>
+        <select name="Which option best describes your current role?" class="left">
+            <option value="opt1">Select an option</option>
+            <option value="opt 2">student</option>
+            <option value="opt 3">Full time job</option>
+            <option value="opt 4">Full time learner</option>
+            <option value="opt 5">Not able to say</option>
+            <option value="opt 6">others</option>
+        </select>
+
+  </div>
+  <br>
+  <div>
+        <label for= "How likely is it that you would recomend free code camp to a friend?" class="right" >
+            How likely is it that you would recomend free code camp to a friend?</label>
+        Definately: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Definately">
+        Maybe: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Maybe">
+        Not sure: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Not sure">
+
+  </div>
+  <br>
+  <div>
+      <label for ="What do you like most in FCC?">"What do you like most in FCC?</label>
+<select name="What do you like most in FCC?" class="left">
+    <option value="opt1">Select an option</option>
+    <option value="opt 2">Challenges</option>
+    <option value="opt 3">Projects</option>
+    <option value="opt 4">Community</option>
+    <option value="opt 5">Open source</option>
+</select>
+  </div>
+  <br>
+  <table>
+      <tr>
+          <td class="right">Things that should be improved in the future </td>
+          <td>
+              <label>
+                 <input type="checkbox" name="options" value="checkbox" id="Back-end projects">
+                 Back-end projects: </label>
+              <br>
+              <label>
+                 <input type="checkbox" name="options" value="checkbox" id="Back-end projects">
+                 Back-end projects: </label>
+                <br>
+                <label>
+                 <input type="checkbox" name="options" value="checkbox" id="Data visualisation">
+                 Data visualisation: </label>
+                <br>
+                <label>
+                         <input type="checkbox" name="options" value="checkbox" id="Challenges">
+                         Challenges:</label>
+                <br>
+                <label>
+                        <input type="checkbox" name="options" value="checkbox" id="Open source community">
+                        Open source community: </label>
+                <br>
+                <label>
+                 <input type="checkbox" name="options" value="checkbox" id="Gitter help rooms">
+                 Gitter help rooms: </label>
+                <br>
+                <label>
+                         <input type="checkbox" name="options" value="checkbox" id="City meetups">
+                         City meetups: </label>
+                <br>
+                <label>
+                         <input type="checkbox" name="options" value="checkbox" id="Videos">
+                         Videos:</label>
+                <br>
+                <label>
+                         <input type="checkbox" name="options" value="checkbox" id="WIKI">
+                         WIKI:</label>
+                <br>
+                <label>
+                         <input type="checkbox" name="options" value="checkbox" id="Forum">
+                         Forum:</label>
+                <br>
+                <label>
+                      <input type="checkbox" name="options" value="checkbox" id="Additional Courses">
+                      Additional Courses:</label>
+          </td>
+      </tr>
+  </table>
+  <br>
+  <div>
+      <label for="Any Comments or Suggestions"> </label>
+      Any Comments or Suggestions: <textarea name="Any Comments or Suggestions" placeholder="add your Comments" cols="30" rows="10"></textarea>
+  </div>
+</html> 
