@@ -12,14 +12,14 @@
      }
      label {
          
-         text-align: right;
+         text-align: left;
          width: 150px;
          padding-right: 25px;
          
          }
-         foam {
-             float: left;
-
+         select {
+             text-align: justify;
+        
          }
 
 
@@ -86,10 +86,23 @@
   <div>
         <label for= "How likely is it that you would recomend free code camp to a friend?" class="right" >
             How likely is it that you would recomend free code camp to a friend?</label>
-        Definately: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Definately">
+        <table>
+            <tr>
+                <th>
+         Definately: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Definately">
+        </th>
+        </tr>
+    <tr>
+        <td>
         Maybe: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Maybe">
+    </td>
+    </tr>
+    <tr>
+            <td>
         Not sure: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Not sure">
-
+    </td>
+</tr>
+    </table>
   </div>
   <br>
   <div>
@@ -158,4 +171,7 @@
       <label for="Any Comments or Suggestions"> </label>
       Any Comments or Suggestions: <textarea name="Any Comments or Suggestions" placeholder="add your Comments" cols="30" rows="10"></textarea>
   </div>
+  <button id="Submit" type="submit" class="right">Submit</button>
+  </form>
+  </body>
 </html> 
