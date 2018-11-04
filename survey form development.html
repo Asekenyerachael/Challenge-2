@@ -6,21 +6,34 @@
     <title>SURVEY FORM </title>
  
  <style>
-     H1 { font: fantasy;
+     H3 { font: fantasy;
       color: black;
+      text-align: center;
 
      }
-     label {
+     
+     form {
          
-         text-align: left;
-         width: 150px;
-         padding-right: 25px;
-         
-         }
-         select {
-             text-align: justify;
+         text-align: centre;
+         max-width: 500px;
+         border:  2px solid black;
+         padding: 3rcm;
+         margin: 20% auto;
+         background-color: whitesmoke;
         
          }
+         label{
+            display:block;
+            text-align: left;
+
+         }
+         textarea {
+             box-align: right;
+             
+        }
+        main{
+            text-align: right;
+        }
 
 
 
@@ -45,33 +58,46 @@
          <br>
          <tr>
              <td>
-                 Email :
+                 Email    :
              </td>
              <td>
-                 <input type="text" name="Email" placeholder="Enter your email">
+                 <input type="email" name="Email" placeholder="Enter your email">
              </td>
 
          </tr>
-</table>
-<br>
-<br>
- <div>
-     <label for="Age">Age</label>
-     <input type="text" name="Age" placeholder="Enter your age">
- </div>
+
+         <tr>
+                <td>
+                    Age     :
+                </td>
+                <td>
+                    <input type="text" name="Age" placeholder="Enter your Age">
+                </td>
+   
+            </tr>
+    
+ <br>
+ <br>
+     <tr>
+        <td>
+       Gender :
+    </td>
+    <td>
+      <input type="radio" name="Gender" value="male" class="left"> Male </td>
+      <td>
+            <input type="radio" name="Gender" value="female" class="left">Female
+        </td>
+   
+    </tr>
+<tr>
+
+    
+    </tr>
+    </table>
  <br>
  <br>
   <div>
-      <label for= Gender class="right">Gender</label>
-
-      Male:  <input type="radio" name="Gender" value="male" class="left">
-
-       Female: <input type="radio" name="Gender" value="female" class="left">
-  </div>
- <br>
- <br>
-  <div>
-        <label for ="Which option best describes your current role?" class="right">Which option best describes your current role?</label>
+        <label for ="Which option best describes your current role?" class="main">Which option best describes your current role?</label>
         <select name="Which option best describes your current role?" class="left">
             <option value="opt1">Select an option</option>
             <option value="opt 2">student</option>
@@ -84,30 +110,30 @@
   </div>
   <br>
   <div>
-        <label for= "How likely is it that you would recomend free code camp to a friend?" class="right" >
+        <label for= "How likely is it that you would recomend free code camp to a friend?" class="main" >
             How likely is it that you would recomend free code camp to a friend?</label>
         <table>
             <tr>
                 <th>
-         Definately: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Definately">
+          <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Definately">Definately
         </th>
         </tr>
     <tr>
         <td>
-        Maybe: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Maybe">
+         <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Maybe">Maybe
     </td>
     </tr>
     <tr>
             <td>
-        Not sure: <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Not sure">
+         <input type="radio" name="How likely is it that you would recomend free code camp to a friend" value="Not sure">Not sure
     </td>
 </tr>
     </table>
   </div>
   <br>
   <div>
-      <label for ="What do you like most in FCC?">"What do you like most in FCC?</label>
-<select name="What do you like most in FCC?" class="left">
+      <label for ="What do you like most in FCC?" class="main">"What do you like most in FCC?</label>
+<select name="What do you like most in FCC?">
     <option value="opt1">Select an option</option>
     <option value="opt 2">Challenges</option>
     <option value="opt 3">Projects</option>
@@ -118,12 +144,12 @@
   <br>
   <table>
       <tr>
-          <td class="right">Things that should be improved in the future </td>
+          <td class="main">Things that should be improved in the future </td>
           <td>
               <label>
                  <input type="checkbox" name="options" value="checkbox" id="Back-end projects">
                  Back-end projects: </label>
-              <br>
+                <br>
               <label>
                  <input type="checkbox" name="options" value="checkbox" id="Back-end projects">
                  Back-end projects: </label>
@@ -137,16 +163,8 @@
                          Challenges:</label>
                 <br>
                 <label>
-                        <input type="checkbox" name="options" value="checkbox" id="Open source community">
-                        Open source community: </label>
-                <br>
-                <label>
-                 <input type="checkbox" name="options" value="checkbox" id="Gitter help rooms">
-                 Gitter help rooms: </label>
-                <br>
-                <label>
-                         <input type="checkbox" name="options" value="checkbox" id="City meetups">
-                         City meetups: </label>
+                    <input type="checkbox" name="options" value="checkbox" id="City meetups">
+                    City meetups: </label>
                 <br>
                 <label>
                          <input type="checkbox" name="options" value="checkbox" id="Videos">
@@ -168,8 +186,8 @@
   </table>
   <br>
   <div>
-      <label for="Any Comments or Suggestions"> </label>
-      Any Comments or Suggestions: <textarea name="Any Comments or Suggestions" placeholder="add your Comments" cols="30" rows="10"></textarea>
+      <label for="Any Comments or Suggestions"> Any Comments or Suggestions: </label>
+       <textarea name="Any Comments or Suggestions" placeholder="add your Comments" cols="30" rows="10"></textarea>
   </div>
   <button id="Submit" type="submit" class="right">Submit</button>
   </form>
